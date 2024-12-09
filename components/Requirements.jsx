@@ -79,14 +79,14 @@ const Requirements = ({ displayRequirements, setDisplayRequirements }) => {
                         >
                             <Dialog.Panel className="relative bg-zinc-200 rounded-lg px-4 text-left overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full sm:p-6">
                                 <div>
-                                    <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-[#eebcb2] border-2 border-[#e44a2a]">
-                                        <CodeIcon className="h-6 w-6 text-helius-orange" aria-hidden="true" />
+                                    <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-[#daebcb] border-2 border-[#2ae436]">
+                                        <CodeIcon className="h-6 w-6 text-turbine-green" aria-hidden="true" />
                                     </div>
                                     <div className="text-center mt-3">
                                         <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-gray-900">
                                             Scroll to view dependencies
                                         </Dialog.Title>
-                                        <div className="mt-4 text-left h-40 overflow-scroll rounded-lg px-2 pb-2 border-2 border-zinc-300/100">
+                                        <div className="mt-4 text-left h-40 overflow-scroll rounded-lg px-2 pb-2 border-2 border-zinc-300/100 min-h-[600px]">
                                             {requirements.map(requirement => (
                                                 <a
                                                     href={requirement.url}
@@ -94,16 +94,16 @@ const Requirements = ({ displayRequirements, setDisplayRequirements }) => {
                                                     target='_blank'
                                                     key={requirement.title}
                                                 >
-                                                    <div className='group border-2 border-[#e49f91] bg-[#eebcb2] rounded-md my-4 p-2'>
+                                                    <div className='group border-2 border-[#2ae436] bg-[#daebcb] rounded-md my-4 p-2'>
                                                         <div    
                                                             className='flex items-center'
                                                         >
                                                             <LinkIcon
                                                                 width='16px'
-                                                                className='mr-1 group-hover:text-helius-orange transition-all duration-200'
+                                                                className='mr-1 group-hover:text-turbine-green transition-all duration-200'
                                                             />
                                                             <span
-                                                                className='font-bold group-hover:text-helius-orange transition-all duration-200'
+                                                                className='font-bold group-hover:text-turbine-green transition-all duration-200'
                                                             >
                                                                 {requirement.title}
                                                             </span>

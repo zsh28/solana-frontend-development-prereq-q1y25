@@ -6,7 +6,7 @@ const BoilerPlate = () => {
                     <h1 className="text-4xl italic">
                         your turn to build!
                     </h1>
-                    <a href='/' className="rounded-lg mt-8 py-2 w-1/2 bg-helius-orange font-medium transition-all duration-200 border-2 border-transparent hover:border-helius-orange hover:bg-transparent">
+                    <a href='/' className="rounded-lg mt-8 py-2 w-1/2 bg-turbine-green font-medium transition-all duration-200 border-2 border-transparent hover:border-turbine-green hover:bg-transparent">
                         return home
                     </a>
                 </div>

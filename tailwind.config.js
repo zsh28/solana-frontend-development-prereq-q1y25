@@ -16,7 +16,7 @@ module.exports = {
         'spin': 'spin 3s linear infinite',
       },
       colors: {
-        "helius-orange": "#e44a2a",
+        "turbine-green": "#00FF7E",
       },
     },
   },

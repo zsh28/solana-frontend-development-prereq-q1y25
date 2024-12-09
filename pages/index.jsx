@@ -15,9 +15,16 @@ const Index = () => {
             />
             <section className='flex flex-col gap-y-4 justify-center'>
             <div className='col-span-2 font-mono text-sm rounded-lg p-5 bg-zinc-800 w-full flex flex-col text-center items-center justify-center'>
-                        <h1 className='text-xl sm:text-2xl md:text-3xl font-bold'>Helius Frontend Development Bootcamp</h1>
-                        <a href="https://twitter.com/_zebedee_" rel="noreferrer" target="_blank" className='my-4 text-zinc-400 hover:text-helius-orange transition-colors duration-200'>by @_zebedee_</a>
-                        <p className='leading-6'>This is a collection of projects that will help you learn the basics of frontend development for solana applications. The projects are ordered by difficulty, with the easiest projects at the top and the hardest projects at the bottom. The projects are also ordered by the order in which you should complete them. You should start with the first project and work your way down the list.</p>
+                        <h1 className='text-xl sm:text-2xl md:text-3xl font-bold'>Turbin3 Frontend Course Prerequisites</h1>
+                        <div>
+                            by
+                        <a href="https://twitter.com/sturt_jack" rel="noreferrer" target="_blank" className='my-4 text-zinc-400 hover:text-turbine-green transition-colors duration-200'> @sturt_jack</a> based on the work of 
+                        <a href="https://twitter.com/_zebedee_" rel="noreferrer" target="_blank" className='my-4 text-zinc-400 hover:text-turbine-green transition-colors duration-200'> @_zebedee_</a>
+
+                        </div>
+                        <p className='leading-6'>Completing these two micro projects is required in order to attend the Turbin3 Frontend Course. Note: you will likely need to airdrop yourself some SOL to test your projects.</p>
+                        <a href="https://faucet.solana.com/" rel="noreferrer" target="_blank" className='my-4 text-zinc-400 hover:text-turbine-green transition-colors duration-200'> SOL FAUCET</a>
+                        
                     </div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-7xl'>
                     {projects.map((project, index) => (
