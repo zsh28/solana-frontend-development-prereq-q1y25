@@ -7,10 +7,7 @@ import * as walletAdapterReact from "@solana/wallet-adapter-react";
 // allows us to choose from the available wallets supported by the wallet adapter
 import * as walletAdapterWallets from "@solana/wallet-adapter-wallets";
 // imports a component which can be rendered in the browser
-import {
-  WalletModalProvider,
-  WalletMultiButton,
-} from "@solana/wallet-adapter-react-ui";
+import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 // applies the styling to the components which are rendered on the browser
 require("@solana/wallet-adapter-react-ui/styles.css");
 // imports methods for deriving data from the wallet's data store

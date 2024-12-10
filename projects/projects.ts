@@ -28,4 +28,13 @@ export const projects: Project[] = [
       starter: "/sendsol/starter",
     },
   },
+  {
+    title: "counter",
+    description:
+      "You will create an application that allows you to create a counter and increment/decrement it.",
+    href: {
+      finished: "/counter/finished",
+      starter: "/counter/starter",
+    },
+  },
 ];
