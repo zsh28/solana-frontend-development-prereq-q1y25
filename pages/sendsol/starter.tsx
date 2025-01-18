@@ -45,7 +45,8 @@ const Starter = () => {
 
     try {
       // Get the latest blockhash info
-      const { blockhash, lastValidBlockHeight } = await connection.getLatestBlockhash();
+      const { blockhash, lastValidBlockHeight } =
+        await connection.getLatestBlockhash();
       const txInfo = {
         feePayer: publicKey,
         blockhash,
@@ -100,7 +101,6 @@ const Starter = () => {
   return (
     <main className="min-h-screen text-white max-w-7xl mx-auto p-4">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        
         {/* Sending Form */}
         <div className="bg-gray-800 p-4 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Send SOL</h2>
@@ -160,7 +160,6 @@ const Starter = () => {
             <p className="text-gray-300">No transaction sent yet.</p>
           )}
         </div>
-
       </section>
     </main>
   );
