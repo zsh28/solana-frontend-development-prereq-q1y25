@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { toast } from "react-toastify";
 import * as web3 from "@solana/web3.js";
+import { ExternalLinkIcon } from "@heroicons/react/outline";
 
 const Starter = () => {
   // Recipient's address/public key
@@ -99,7 +100,7 @@ const Starter = () => {
   return (
     <main className="min-h-screen text-white max-w-7xl mx-auto p-4">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
+        
         {/* Sending Form */}
         <div className="bg-gray-800 p-4 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Send SOL</h2>
@@ -148,10 +149,12 @@ const Starter = () => {
               href={`https://explorer.solana.com/tx/${txSig}?cluster=devnet`}
               target="_blank"
               rel="noreferrer"
-              className="text-blue-400 underline"
+              className="text-blue-400 underline flex items-center"
             >
               {/* Snip the signature */}
               {snipSignature(txSig)}
+              {/* External Link Icon */}
+              <ExternalLinkIcon className="h-5 w-5 ml-2" />
             </a>
           ) : (
             <p className="text-gray-300">No transaction sent yet.</p>
