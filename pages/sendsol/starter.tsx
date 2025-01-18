@@ -129,7 +129,7 @@ const Starter = () => {
           <button
             onClick={handleTransaction}
             disabled={!account || !amount}
-            className="bg-purple-600 hover:bg-purple-700 disabled:opacity-50 px-4 py-2 rounded"
+            className="bg-blue-600 hover:bg-blue-700 disabled:opacity-50 px-4 py-2 rounded"
           >
             Send
           </button>
